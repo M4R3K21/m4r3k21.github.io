@@ -6,15 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Data Science Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 2rem; background-color: #f4f4f4; color: #333; }
-    header { text-align: center; margin-bottom: 2rem; }
-    h1 { font-size: 2.5rem; }
-    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-    .project { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .project h2 { margin-top: 0; }
-    .project a { text-decoration: none; color: #007acc; }
-    @media (max-width: 768px) {
-      .projects { grid-template-columns: 1fr; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .projects, .education, .skills-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .project, .edu-entry, .skills-entry {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project h2, .edu-entry h3 {
+      margin-top: 0;
+    }
+    .project a {
+      text-decoration: none;
+      color: #007acc;
+    }
+    .about, .skills {
+      background: #ffffffcc;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
     }
   </style>
 </head>
@@ -22,30 +56,67 @@
   <header>
     <h1>Marek Wisniewski</h1>
     <p>Data Scientist | Python | SQL | Machine Learning</p>
-    <p><a href="mailto:marekwisniewskiuk@gmail.com">marekwisniewskiuk@gmail.com</a> | <a href="https://github.com/M4R3K21">GitHub</a></p>
+    <p><a href="mailto:marekwisniewskiuk@gmail.com">marekwisniewskiuk@gmail.com</a> | <a href="https://github.com/yourusername">GitHub</a></p>
   </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am a motivated and detail-oriented Data Scientist with a background in physics and natural sciences. I transitioned into data science to combine my analytical thinking with technology to solve real-world problems. I enjoy uncovering insights from data, building predictive models, and continuously learning new tools and techniques.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib)</li>
+      <li>SQL (PostgreSQL, MySQL)</li>
+      <li>Data Visualisation (Plotly, Dash)</li>
+      <li>Machine Learning & AI</li>
+      <li>Jupyter Notebook</li>
+      <li>APIs & Web Scraping</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+
+    <div class="edu-entry">
+      <h3>Data Science – IBM (via Coursera)</h3>
+      <p><strong>07/2024 to 03/2025</strong></p>
+      <p>Successfully completed a professional certification program in data science, gaining skills in data analysis, visualization, machine learning, and working with tools such as Python, SQL, and data analysis libraries.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>AI Developer – IBM (via Coursera)</h3>
+      <p><strong>02/2024 to 06/2024</strong></p>
+      <p>Successfully completed a professional certification program in AI development, gaining hands-on experience in machine learning, neural networks, and AI model deployment.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>Python Intermediate – SoloLearn</h3>
+      <p><strong>03/2024 to 06/2024</strong></p>
+      <p>Successfully completed a course covering the Python programming, including variables, data structures, loops, functions, and control flow. Gained foundational skills in writing clean and efficient Python code.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>First Year of Natural Sciences – Open University, Manchester</h3>
+      <p><strong>03/2020 to 06/2021</strong></p>
+      <p>Completed the first year of a Natural Sciences program, focusing on interdisciplinary studies in technology, mathematics, and science.</p>
+    </div>
+
+    <div class="edu-entry">
+      <h3>Physics (Discontinued) – University of Rzeszow, Poland</h3>
+      <p><strong>09/2002 to 03/2005</strong></p>
+      <p>Studied physics at the undergraduate level before discontinuing to move to England. Gained a strong foundation in theoretical and applied physics.</p>
+    </div>
+  </section>
 
   <section class="projects">
     <div class="project">
       <h2>Market Profitability Analysis: France vs Europe</h2>
-      <p>This project explores financial sales data to identify which factors most influence profit, with a focus on France and a comparison to the broader European market.
-
-Key steps include:
-
-Data cleaning and preprocessing
-
-Exploratory data analysis (EDA)
-
-Correlation analysis (France vs Europe)
-
-Visualisations using Plotly and Seaborn
-
-Business-style presentation of findings
-
-The goal is to understand what drives profitability and how patterns differ between regions.</p>
-      <p><a href="https://github.com/M4R3K21/Comparison-of-Correlation-with-Profit-France-vs-Europe">View Project</a></p>
+      <p>This project explores financial sales data to identify which factors most influence profit, with a focus on France and a comparison to the broader European market. Key steps include: Data cleaning and preprocessing, Exploratory data analysis (EDA), Correlation analysis (France vs Europe), Visualisations using Plotly and Seaborn, and Business-style presentation of findings.</p>
+      <p><a href="#">View Project</a></p>
     </div>
-
   </section>
 </body>
 </html>

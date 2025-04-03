@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Data Science Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 2rem; background-color: #f4f4f4; color: #333; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 { font-size: 2.5rem; }
+    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .project { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .project h2 { margin-top: 0; }
+    .project a { text-decoration: none; color: #007acc; }
+    @media (max-width: 768px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jan Kowalski</h1>
+    <p>Data Scientist | Python | SQL | Machine Learning</p>
+    <p><a href="mailto:jan.kowalski@email.com">jan.kowalski@email.com</a> | <a href="https://github.com/yourusername">GitHub</a></p>
+  </header>
+
+  <section class="projects">
+    <div class="project">
+      <h2>Football Match Weather Analysis</h2>
+      <p>Analysed how weather conditions impact goals in football matches using Python, APIs, and Pandas.</p>
+      <p><a href="https://github.com/yourusername/weather-football-analysis">View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Customer Segmentation</h2>
+      <p>Used K-Means clustering on customer data to identify distinct groups. Tools: Pandas, Scikit-Learn, Matplotlib.</p>
+      <p><a href="https://github.com/yourusername/customer-segmentation">View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Netflix Dashboard</h2>
+      <p>Created an interactive dashboard to analyse Netflix data using Plotly and Dash.</p>
+      <p><a href="https://github.com/yourusername/netflix-dashboard">View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Predicting House Prices</h2>
+      <p>Regression model predicting house prices based on property features. Tools: Scikit-learn, Pandas, Seaborn.</p>
+      <p><a href="https://github.com/yourusername/house-price-prediction">View Project</a></p>
+    </div>
+  </section>
+</body>
+</html>

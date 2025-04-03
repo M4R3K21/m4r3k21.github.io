@@ -1,5 +1,5 @@
 
-# Data Science Portfolio – Jan Kowalski
+# Data Science Portfolio – Marek Wisniewski
 
 Welcome to my Data Science portfolio!
 
